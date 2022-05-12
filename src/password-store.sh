@@ -155,7 +155,7 @@ check_sneaky_paths() {
 #
 
 clip() {
-  echo -n "$1" | clip.exe || die "Error: Could not copy data to the clipboard"
+	echo -n "$1" | clip.exe || die "Error: Could not copy data to the clipboard"
 	echo "Copied $2 to windows clipboard. Will NOT be cleared automatically, so make sure to clear it manually!"
 }
 
